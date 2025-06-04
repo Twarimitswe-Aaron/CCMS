@@ -4,6 +4,7 @@ import DashboardLayout from './components/layout/DashboardLayout';
 import DashboardContent from './components/DashboardContent';
 import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp"
+import Landing from "./pages/Landing"
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="/signUp" element={<SignUp/>}/>
           <Route path="/login" element={<SignIn/>}/>
        
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          <Route path="*" element={<Landing/>} />
         </Routes>
       </Router>
     </UserProvider>
