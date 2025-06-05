@@ -11,7 +11,7 @@ interface UserContextType {
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
 export function UserProvider({ children }: { children: ReactNode }) {
-  const [role, setRole] = useState<UserRole>('citizen'); // Default role is citizen
+  const [role, setRole] = useState<UserRole>('admin'); // Default role is citizen
 
   return (
     <UserContext.Provider value={{ role, setRole }}>
